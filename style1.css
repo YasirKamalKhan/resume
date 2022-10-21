@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2:wght@600&family=DynaPuff&family=Oleo+Script+Swash+Caps&family=Oswald:wght@500&family=Oxygen:wght@300;400;700&family=Poppins&family=Ubuntu:wght@400;500&display=swap');
+
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* variables */
+:root {
+    --primary-color: #A82C48;
+    --secondary-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* custom scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+/* ============================ */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .mainbd{
+    box-shadow: 0 35px 55px rgb(0 0 0);
+} */
+
+
+
+/*
+=====================================
+header Design
+=====================================
+*/
+.navigation-wrap {
+    position: static;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.navigation-wrap .main-btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/*
+=====================================
+Change navbar style on scroll
+=====================================
+*/
+.navigation-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.125);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+/* ends here */
+
+
+
+
+
+.title {
+    border-bottom: #0089ff;
+}
+
+.title h3 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.image-text div h4,
+.references .row h5 {
+    color: #fff;
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #002a68;
+}
+
+h5 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #848c98;
+}
+
+.skills .row div h5,
+.Languages .row div h5,
+.hobbies .row div h5 {
+    color: #002a68;
+}
+
+.left {
+    background: #002a68;
+    color: #fff;
+}
+
+.left .row .image {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 20px 2px #0089ff;
+}
+
+.left .row .image img {
+    object-fit: cover;
+
+}
+
+.right {
+    color: #000;
+    /* background: #ccd1d3; */
+}
+
+.progress {
+    height: 13px;
+    background-color: #d9dcdf;
+}
+
+.progress .progress-bar {
+    background-color: #00398d;
+}
+
+.experience .row h6 a,
+.education .row h6 a {
+    color: #00398d;
+}
+
+.hobbies .row i {
+    color: #00398d;
+}
+
+
+.left .contact div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* button animation */
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.button-anim {
+    min-width: 40px;
+    min-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    padding: 0px 6px;
+    margin-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 4px 5px 24px rgb(79 209 197 / 64%);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    /* padding: 10px; */
+}
+
+.wrap button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(50px + 12px);
+    min-height: calc(40px + 12px);
+    border: 0px solid #00FFCB;
+    box-shadow: 0 0 60px rgb(0 255 203 / 14%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button-anim:hover,
+.button-anim:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+.wrap button:hover::before,
+.wrap button:focus::before {
+    opacity: 1;
+}
+
+.wrap button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.wrap button:hover::after,
+.wrap button:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+    }
+
+}
+
+/*
+=====================================
+Footer Section design
+=====================================
+*/
+.footer {
+    background: var(--primary-color);
+}
+
+.footer .footer-link {
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 0 1.875rem;
+}
+
+.footer .footer-link:hover {
+    color: var(--white-color) !important;
+}
+
+.footer a i {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 0 1rem;
+}
